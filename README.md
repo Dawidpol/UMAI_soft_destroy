@@ -1,17 +1,17 @@
 # UMAI_soft_destroy
 
 The source code for the feature is located here:
-
+```ruby
 lib/soft_destroy.rb
-
 lib/soft_destroy/override_methods.rb
+```
 
 Tests are located in:
 
+```ruby
 test/soft_destroy/soft_destroy_test.rb
-
+```
 To add soft destroy feature you need to add enable_soft_destroy in model class
-
 ```ruby
 class Book < ApplicationRecord
   enable_soft_destroy
