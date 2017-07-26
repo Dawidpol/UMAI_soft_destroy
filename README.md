@@ -6,6 +6,9 @@ lib/soft_destroy.rb
 
 lib/soft_destroy/override_methods.rb
 
+Tests are located in:
+
+test/soft_destroy/soft_destroy_test.rb
 
 To add soft destroy feature you need to add enable_soft_destroy in model class
 
