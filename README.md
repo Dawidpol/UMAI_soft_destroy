@@ -13,6 +13,7 @@ Feature's tests are located in:
 ```ruby
 test/soft_destroy/soft_destroy_test.rb
 ```
+If you want to add your own model class with feature. You need to follow the instructions below.
 To add soft destroy feature you need to add enable_soft_destroy in model class
 ```ruby
 class Book < ApplicationRecord
