@@ -1,0 +1,32 @@
+<table>
+  <thead>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th colspan="2">Books</th>
+    <th colspan="4"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% authors.each do |author| %>
+      <tr>
+        <td><%= author.first_name %></td>
+        <td><%= author.last_name %></td>
+        <td><%= link_to 'Books', author_books_path(author_id: author.id) %></td>
+        <td>
+          <ul>
+            <% author.book.each do |book| %>
+                <li><%= book.name %></li>
+            <% end %>
+          </ul>
+        </td>
+        <td><%= link_to 'Show', author %></td>
+        <td><%= link_to 'Edit', edit_author_path(author) %></td>
+        <td><%= link_to 'SoftDestroy', author_soft_destroy_path(author_id: author.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'HardDestroy', author_hard_destroy_path(author_id: author.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+      </tr>
+  <% end %>
+  </tbody>
+</table>

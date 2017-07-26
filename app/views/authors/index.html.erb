@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Authors not deleted</h1>
+
+<%= render 'author_table', authors: @authors_not_deleted %>
+
+<h1>Authors deleted</h1>
+
+<%= render 'author_table', authors: @authors_deleted %>
+
+
+<br>
+
+<%= link_to 'New Author', new_author_path %>
+
+<h1>Books not deleted</h1>
+
+<ul>
+  <% @books.each do |book| %>
+      <li><%= book.name %></li>
+  <% end %>
+</ul>
+<h1>Books deleted</h1>
+<ul>
+  <% @books_deleted.each do |book| %>
+      <li><%= book.name %></li>
+  <% end %>
+</ul>
