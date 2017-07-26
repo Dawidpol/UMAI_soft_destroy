@@ -1,0 +1,1 @@
+# UMAI_soft_destroy
