@@ -1,15 +1,13 @@
 # UMAI_soft_destroy
 
-After you start this you will see the preview of the soft_destroy feature.
+If you want to see the preview of the soft_destroy feature you need just start this app.
 
-The source code for the feature is located here:
+The source code for the feature is located in:
 ```ruby
 lib/soft_destroy.rb
 lib/soft_destroy/override_methods.rb
 ```
-
-Tests are located in:
-
+Features tests are located in:
 ```ruby
 test/soft_destroy/soft_destroy_test.rb
 ```
@@ -29,16 +27,15 @@ end
 ```
 Then you can use it like that
 
-For soft version:
+Soft version:
 ```ruby
 Book.destroy
 Book.destroy(:soft)
 Book.soft_destroy
 ```
 
-For hard version:
+Hard version:
 ```ruby
 Book.destroy(:hard)
 Book.hard_destroy
 ```
-
