@@ -1,7 +1,9 @@
 # UMAI_soft_destroy
 
-If you want to see the preview of the soft_destroy feature you need just start this app.
-
+If you want to see the preview of the soft_destroy feature you need just start this app and go to url:
+```ruby
+https://localhost:3000/authors
+```
 The source code for the feature is located in:
 ```ruby
 lib/soft_destroy.rb
