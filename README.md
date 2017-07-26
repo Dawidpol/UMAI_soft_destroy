@@ -1,6 +1,6 @@
 # UMAI_soft_destroy
 
-If you want to see the preview of the soft_destroy feature you need just start this app and go to url:
+If you want to see the preview of the soft_destroy feature you need to just start this app and go to url:
 ```ruby
 https://localhost:3000/authors
 ```
@@ -9,7 +9,7 @@ The source code for the feature is located in:
 lib/soft_destroy.rb
 lib/soft_destroy/override_methods.rb
 ```
-Features tests are located in:
+Feature's tests are located in:
 ```ruby
 test/soft_destroy/soft_destroy_test.rb
 ```
